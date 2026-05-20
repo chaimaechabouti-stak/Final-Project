@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">✈ TravelWorld</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="searchInput" placeholder="Search destinations..." />
+      <button class="btn-search" onclick="searchDestinations()">Search</button>
+      <button class="btn-clear" onclick="clearSearch()">Clear</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">🌍 Discover the World</span>
+      <h1>Your Next Adventure<br>Starts Here</h1>
+      <p>Explore breathtaking beaches, ancient temples, and vibrant cities from around the globe. Let us guide your journey to the world's most incredible destinations.</p>
+    </div>
+  </section>
+
+  <!-- SEARCH RESULTS -->
+  <div id="results-section">
+    <h2 class="section-title">Search Results</h2>
+    <p class="section-subtitle" id="results-subtitle"></p>
+    <div class="cards-grid" id="results-grid"></div>
+  </div>
+
+  <!-- BEACHES SECTION -->
+  <div class="section" id="beaches-section">
+    <h2 class="section-title">🏖️ Top Beach Destinations</h2>
+    <p class="section-subtitle">Discover paradise with our handpicked beach recommendations</p>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589979481223-deb893043163?w=600" alt="Bora Bora" onerror="this.src='https://via.placeholder.com/600x220?text=Bora+Bora'"/>
+        <div class="card-body">
+          <span class="card-tag">Beach</span>
+          <h3>Bora Bora, French Polynesia</h3>
+          <p>A stunning island surrounded by turquoise lagoons and coral reefs, known as the "Pearl of the Pacific". Perfect for snorkeling and relaxation.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Copacabana" onerror="this.src='https://via.placeholder.com/600x220?text=Copacabana'"/>
+        <div class="card-body">
+          <span class="card-tag">Beach</span>
+          <h3>Copacabana Beach, Brazil</h3>
+          <p>One of the most famous urban beaches in the world, stretching 4km along Rio de Janeiro's stunning coastline with vibrant local culture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEMPLES SECTION -->
+  <div class="section" id="temples-section">
+    <h2 class="section-title">🛕 Ancient Temples & Monuments</h2>
+    <p class="section-subtitle">Explore the world's most awe-inspiring sacred sites</p>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508159452718-d22f6734a236?w=600" alt="Angkor Wat" onerror="this.src='https://via.placeholder.com/600x220?text=Angkor+Wat'"/>
+        <div class="card-body">
+          <span class="card-tag">Temple</span>
+          <h3>Angkor Wat, Cambodia</h3>
+          <p>The world's largest religious monument, a breathtaking 12th-century temple complex surrounded by a vast moat and lush jungle.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Taj Mahal" onerror="this.src='https://via.placeholder.com/600x220?text=Taj+Mahal'"/>
+        <div class="card-body">
+          <span class="card-tag">Temple</span>
+          <h3>Taj Mahal, India</h3>
+          <p>An ivory-white marble mausoleum and UNESCO World Heritage Site, one of the world's most iconic and romantic monuments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTRIES SECTION -->
+  <div class="section" id="countries-section">
+    <h2 class="section-title">🌏 Countries to Explore</h2>
+    <p class="section-subtitle">Immerse yourself in diverse cultures and stunning landscapes</p>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600" alt="Brazil" onerror="this.src='https://via.placeholder.com/600x220?text=Brazil'"/>
+        <div class="card-body">
+          <span class="card-tag">Country</span>
+          <h3>Brazil</h3>
+          <p>From the Amazon rainforest to Rio's carnival, Brazil offers an unmatched mix of natural wonders, vibrant cities, and rich cultural heritage.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600" alt="Australia" onerror="this.src='https://via.placeholder.com/600x220?text=Australia'"/>
+        <div class="card-body">
+          <span class="card-tag">Country</span>
+          <h3>Australia</h3>
+          <p>Home to the Great Barrier Reef, Uluru, and world-class cities like Sydney and Melbourne. A land of extraordinary landscapes and wildlife.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 <span>TravelWorld</span>. All rights reserved. | Explore the world with us.</p>
+  </footer>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
